@@ -1,0 +1,97 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  background: url("../Images/header/header-bg.png") center no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+/* .tero {
+  min-height: 100vh;
+  background: url("../Images/header/header-bg.png") center cover no-repeat;
+} */
+
+.course-list {
+  width: 300px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.course-item {
+  display: flex;
+  padding: 10px 15px;
+}
+.course-item:hover {
+  background: rgb(240, 240, 240);
+}
+.hero {
+  background: radial-gradient(
+      circle at center,
+      rgba(248, 247, 247, 0.8),
+      rgba(230, 229, 229, 0.9)
+    ),
+    url("your-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-bottom: 4px solid;
+  border-radius: 5px;
+}
+
+.service-box .read-more {
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box.border-primary:hover {
+  background: #0d6efd;
+}
+
+.service-box.border-success:hover {
+  background: #198754;
+}
+.service-box.border-warning:hover {
+  background: #ffc107;
+}
+
+.link-element {
+  text-decoration: none;
+}
+
+.service-box:hover,
+.service-box:hover h3,
+.service-box:hover p,
+.service-box:hover a,
+.service-box:hover i {
+  color: #fff !important;
+}
+
+.card-img-fixed {
+  height: 100px; /* choose any height */
+  object-fit: contain; /* crop instead of stretch */
+  width: 100vh;
+}
+.pricing-box {
+  transition: all 0.5s;
+}
+.pricing-box:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #f2f5fc;
+}

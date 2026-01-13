@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Customized CSS styles -->
+    <link rel="stylesheet" href="Styles/styel.css">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Animation On Scrol (AOS) CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>General Code page with bootsrap</title>
+</head>
+
+<body>
+    <header class="header tero">
+        <!-- Navbar -->
+        <nav style="background: #55bbe6;" class="navbar   navbar-expand-md fixed-top">
+            <div class="container d-flex align-items-center position-relative">
+
+                <!-- Offcanvas Button (only on mobile/tablet) -->
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Brand -->
+                <a class="navbar-brand fs-3 mx-md-0 mx-auto" href="#">
+                    General Code &lt;/&gt;
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-md-flex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item  px-2 ">
+                            <a id="caret" class="nav-link  text-dark " href="#collapseExample" data-bs-toggle="collapse"
+                                aria-expanded="false">
+                                <i class="fa-duotone fs-5 fa-solid fa-graduation-cap d-md-none"></i>
+                                <span>Tutorials</span>
+                                <i class="fa-sharp fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="collapse position-fixed  " id="collapseExample">
+                                <div class="course-list">
+                                    <div class="course-item">
+                                        <i class="fa-brands fa-python fs-3 text-primary"></i>
+                                        <span class="fw-bold mx-3">Python</span>
+                                    </div>
+                                    <div class="course-item">
+                                        <i class="fa-brands fa-php fs-3 text-primary"></i>
+                                        <span class="fw-bold mx-3">PHP</span>
+                                    </div>
+                                    <div class="course-item">
+                                        <i class="fa-brands fa-java fs-3 text-primary"></i>
+                                        <span class="fw-bold mx-3">Java</span>
+                                    </div>
+                                    <div class="course-item">
+                                        <i class="fa-brands fa-square-js fs-3 text-primary"></i>
+                                        <span class="fw-bold mx-3">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item  px-2">
+                            <a class="nav-link text-dark" href="#">
+                                <i class="fa-solid fs-5 fa-house d-md-none"></i>
+                                <span>Main Page</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  px-2"><a class="nav-link text-dark" href="#">
+                                <i class="fa-duotone fs-5 fa-solid fa-phone d-md-none"></i>
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-start d-md-none" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">General Code &lt;/&gt;</h5>
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item "><a class="nav-link  " role="button" data-bs-toggle="collapse"
+                                    href="#collapseExample" aria-expanded="false">
+                                    <i class="fa-duotone fs-5 fa-solid fa-graduation-cap"></i>
+                                    <span class="ms-2">Tutorials</span>
+                                </a>
+                                <div class="collapse   " id="collapseExample">
+                                    <div class="course-list">
+                                        <div class="course-item">
+                                            <i class="fa-brands fa-python fs-3 text-primary"></i>
+                                            <span class="fw-bold mx-3">Python</span>
+                                        </div>
+                                        <div class="course-item">
+                                            <i class="fa-brands fa-php fs-3 text-primary"></i>
+                                            <span class="fw-bold mx-3">PHP</span>
+                                        </div>
+                                        <div class="course-item">
+                                            <i class="fa-brands fa-java fs-3 text-primary"></i>
+                                            <span class="fw-bold mx-3">Java</span>
+                                        </div>
+                                        <div class="course-item">
+                                            <i class="fa-brands fa-square-js fs-3 text-primary"></i>
+                                            <span class="fw-bold mx-3">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fs-5 fa-house"></i>
+                                    <span class="ms-2">Main Page</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-duotone fs-5 fa-solid fa-phone"></i>
+                                    <span class="ms-2">Contact us</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <hr class="my-4">
+                                <p><strong>General Code</strong> in social media</p>
+                                <div class="row fs-1 w-75">
+                                    <div class="col">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                    <div class="col">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Introduction Section -->
+        <section class="mt-5 py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 ">
+                        <h3 class="fs-1">Learning Coding with General Code</h3>
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero quisquam
+                            beatae
+                            voluptates doloribus. Aliquam, quia. Quasi, similique maiores placeat dignissimos id,
+                            reiciendis eum omnis iure dolor consectetur neque libero.</p>
+                        <button class="btn btn-primary my-3 rounded-pill px-4">Courses</button>
+                        <button class="btn btn-outline-primary rounded-pill px-4">Comments</button>
+                    </div>
+                    <div class="col-md-6 offset-md-1 bg-info"><img src="./Images/header/undraw_programming_j1zw (1).svg"
+                            alt="a man while coding" class="img-fluid "></div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    </header>
+
+    <!-- Can every one? -->
+    <section class="my-5">
+        <div class="container ">
+            <div class=" row gy-5 align-items-center">
+                <div class="col-md-6"> <img src="Images/caneveryone/undraw_online-learning_tgmv.svg"
+                        alt="a girl Learning coding online" class="img-fluid"></div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">Do Any One Can Learn Coding ?</h3>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, minima! Quas iste
+                        sint, possimus
+                        ipsum repellendus molestias amet nobis dicta fuga optio rem corrupti impedit neque quam beatae
+                        ipsam facilis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="py-5 px-3">
+        <div class="container">
+            <h3 class="text-center fs-2 fw-bold">Tutorials</h3>
+            <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, nesciunt?</p>
+            <div class="row row-cols-1 row-cols-sm-2 gy-4 row-cols-md-3 ">
+                <!-- Python Course -->
+                <div class="col">
+                    <div class="card" data-aos="flip-right">
+
+                        <img src="Images/course/Python-Emblem.png" class=" card-img-top hero" alt="coding with python">
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold py-2">Python Course</h5>
+                            <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laboriosam,
+                                voluptas.</p>
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <a href="#" class="btn btn-primary">buy now</a>
+                                <span class="text-muted">89.99$</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Java Course -->
+                <div class="col">
+                    <div class="card" data-aos="flip-right">
+                        <img src="Images/course/javareal.jpeg" class="card-img-top" alt="coding with python">
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold py-2">Python Course</h5>
+                            <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laboriosam,
+                                voluptas.</p>
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <a href="#" class="btn btn-primary">buy now</a>
+                                <span class="text-muted">89.99$</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- PHP Course -->
+                <div class="col">
+                    <div class="card" data-aos="flip-right">
+                        <img src="Images/course/2156300_4b33.webp" class="card-img-top" alt="coding with python">
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold py-2">Python Course</h5>
+                            <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laboriosam,
+                                voluptas.</p>
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <a href="#" class="btn btn-primary">buy now</a>
+                                <span class="text-muted">89.99$</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Counters -->
+    <section class="py-5 px-3">
+        <div class="container">
+            <h2 class="text-center">We are proud of our results</h2>
+            <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <div class="row fs-1 text-center row-cols-1 row-cols-sm-2 row-cols-md-4 gy-4">
+                <div class="col">
+                    <div class="shadow p-3 rounded-3">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="9000">0</span>
+                        <h5>Students</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow p-3 rounded-3">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="6500">0</span>
+                        <h5>Students</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow p-3 rounded-3">
+                        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="12500">0</span>
+                        <h5>Students</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="shadow p-3 rounded-3">
+                        <span class="purecounter" data-purecounter-start="0">0</span>
+                        <h5>Students</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-5 px-3">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <p class="my-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <img src="Images/faq/undraw_questions_g2px.svg" alt="FAQ" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item’s accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #4
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the fourth item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Accordion Item #5
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the fifth item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 px-3">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <p class="my-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row py-5 text-center row-cols-1 row-cols-md-3 gy-4">
+                <!-- Service Box 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box border-primary p-5" data-aos="fade-left">
+                        <i class="fs-1 bi bi-cup-hot-fill"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p class="pt-3 pb-5">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="read-more">
+                            <a class="text-primary link-element" href="#">See more</a>
+                            <i class="text-primary fs-5 bi bi-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Box 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box border-success p-5" data-aos="fade-left">
+                        <i class="fs-1 bi bi-bar-chart-line-fill"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p class="pt-3 pb-5">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="read-more">
+                            <a class="text-success link-element" href="#">See more</a>
+                            <i class="text-success fs-5 bi bi-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Box 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box border-warning p-5" data-aos="fade-left">
+                        <i class="fs-1 bi bi-bug-fill"></i>
+                        <h3>Lorem ipsum</h3>
+                        <p class="pt-3 pb-5">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="read-more">
+                            <a class="text-warning link-element" href="#">See more</a>
+                            <i class="text-warning fs-5 bi bi-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 px-3">
+        <div class="container">
+            <h3 class="text-center">General Code Pricing</h3>
+            <p class="pt-3 pb-4 text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="row text-center row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 ">
+                <!-- First Pricing Card -->
+                <div class="col pricing-box d-flex">
+                    <div class="card shadow h-100 d-flex flex-column">
+
+                        <div class="card-body">
+                            <h5 class="fw-bold my-4">Free Plan</h5>
+                            <p class="card-text"><span class="text-danger fw-bold">0.00 $</span></p>
+                            <img class="img-fluid card-img-top card-img-fixed "
+                                src="Images/Pricing/undraw_car-salesman_ni2a.svg" alt="">
+                            <ul class=" list-group list-group-flush mt-4">
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-alarm me-4 fs-5"></i>
+                                    <span>First Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar-date me-4 fs-5"></i>
+                                    <span>Second Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-chat-dots me-4 fs-5"></i>
+                                    <span>Third Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center ">
+                                    <i class="bi bi-search me-4 fs-5"></i>
+                                    <span>Fourth Plan attribute</span>
+                                </li>
+
+
+                            </ul>
+                            <button class="btn btn-outline-primary my-3">Buy the Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Pricing Card -->
+                <div class="col pricing-box d-flex">
+                    <div class="card shadow  h-100 d-flex flex-column ">
+
+                        <div class="card-body">
+                            <h5 class="fw-bold my-4">Free Plan</h5>
+                            <p class="card-text"><span class="text-danger fw-bold">0.00 $</span></p>
+                            <img class="img-fluid card-img-top card-img-fixed "
+                                src="Images/Pricing/undraw_on-the-way_zwi3.svg" alt="">
+                            <ul class="list-group list-group-flush mt-4">
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-alarm me-4 fs-5"></i>
+                                    <span>First Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar-date me-4 fs-5"></i>
+                                    <span>Second Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-chat-dots me-4 fs-5"></i>
+                                    <span>Third Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center ">
+                                    <i class="bi bi-search me-4 fs-5"></i>
+                                    <span>Fourth Plan attribute</span>
+                                </li>
+
+
+                            </ul>
+                            <button class="btn btn-outline-primary my-3">Buy the Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Pricing Card -->
+                <div class="col pricing-box d-flex">
+                    <div class="card shadow h-100 d-flex flex-column">
+
+                        <div class="card-body">
+                            <h5 class="fw-bold my-4">Free Plan</h5>
+                            <p class="card-text"><span class="text-danger fw-bold">0.00 $</span></p>
+                            <img class="img-fluid card-img-top card-img-fixed "
+                                src="Images/Pricing/undraw_bike-ride_ba0o.svg" alt="">
+                            <ul class="list-group list-group-flush mt-4">
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-alarm me-4 fs-5"></i>
+                                    <span>First Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar-date me-4 fs-5"></i>
+                                    <span>Second Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-chat-dots me-4 fs-5"></i>
+                                    <span>Third Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center ">
+                                    <i class="bi bi-search me-4 fs-5"></i>
+                                    <span>Fourth Plan attribute</span>
+                                </li>
+
+
+                            </ul>
+                            <button class="btn btn-outline-primary my-3">Buy the Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Pricing Card -->
+                <div class="col pricing-box d-flex">
+                    <div class="card shadow h-100 d-flex flex-column ">
+
+                        <div class="card-body">
+                            <h5 class="fw-bold my-4">Free Plan</h5>
+                            <p class="card-text"><span class="text-danger fw-bold">0.00 $</span></p>
+                            <img class="img-fluid card-img-top card-img-fixed "
+                                src="Images/Pricing/undraw_winners_fre4.svg" alt="">
+                            <ul class="list-group list-group-flush mt-4">
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-alarm me-4 fs-5"></i>
+                                    <span>First Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-calendar-date me-4 fs-5"></i>
+                                    <span>Second Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-chat-dots me-4 fs-5"></i>
+                                    <span>Third Plan attribute</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center ">
+                                    <i class="bi bi-search me-4 fs-5"></i>
+                                    <span>Fourth Plan attribute</span>
+                                </li>
+
+
+                            </ul>
+                            <button class="btn btn-outline-primary my-3">Buy the Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Wave -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f2f5fc" fill-opacity="1"
+            d="M0,256L34.3,229.3C68.6,203,137,149,206,154.7C274.3,160,343,224,411,245.3C480,267,549,245,617,229.3C685.7,213,754,203,823,165.3C891.4,128,960,64,1029,74.7C1097.1,85,1166,171,1234,181.3C1302.9,192,1371,128,1406,96L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        </path>
+    </svg>
+    <!-- Footer Section -->
+    <footer class="py-5 px-3">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h4 class="fw-bold">GeneralCode.af</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <h4 class="fw-bold border-bottom border-4 border-warning pb-3 w-75">Links</h4>
+                    <p><i class="bi bi-caret-right"></i> Home</p>
+                    <p><i class="bi bi-caret-right"></i> About</p>
+                    <p><i class="bi bi-caret-right"></i> Services</p>
+                    <p><i class="bi bi-caret-right"></i> Contact</p>
+
+                </div>
+                <div class="col-lg-2 ">
+                    <h4 class="fw-bold border-bottom border-4 border-success pb-3 w-75">Services</h4>
+                    <p><i class="bi bi-caret-right"></i> Home</p>
+                    <p><i class="bi bi-caret-right"></i> About</p>
+                    <p><i class="bi bi-caret-right"></i> Services</p>
+                    <p><i class="bi bi-caret-right"></i> Contact</p>
+
+                </div>
+                <div class="col-lg-2 ">
+                    <h4 class="fw-bold border-bottom border-4 border-info pb-3 w-75">Contact</h4>
+                    <p><i class="bi bi-caret-right"></i> Home</p>
+                    <p><i class="bi bi-caret-right"></i> About</p>
+                    <p><i class="bi bi-caret-right"></i> Services</p>
+                    <p><i class="bi bi-caret-right"></i> Contact</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootsrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let caret = document.getElementById('caret')
+        caret.addEventListener('click', () => {
+            caret.lastElementChild.classList.toggle('fa-angle-down')
+            caret.lastElementChild.classList.toggle('fa-angle-up')
+        })
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Pure Counter JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+        new PureCounter();
+    </script>
+</body>
+
+</html>
